@@ -20,7 +20,7 @@ Private host:
 2. реализованы модули ec2, rds, vpc. Насколько можно параметризированы они.  3*. Модуль ec2: Должен из вызова модуля создавать для своих серверов и sg, и ebs диск, и ec2. Должен включать переменную servers, которая выступает листом объектов с конфигом серверов. Т.е ес2 модуль должен мочь создавать из этого параметра одним инклюдом модуля несколько серверов (нужно будет использовать for_each, dynamic и for expressions). 
 
 <b>Прим. структуры:</b>
-```JSON
+```javascript
 servers_config = {
  "server_name1" = { 
     sg_config = {
@@ -39,4 +39,4 @@ servers_config = {
 Где, конфиги - тобой определенные параметры объекта server sg_config
 </details>
 
--[x] [Solution](https://github.com/ddovguchev/devops-practices/Task13.%20Terraform)
+[Solution](https://github.com/ddovguchev/devops-practices/tree/master/Task13.%20Terraform/task_solution)
